@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        .container{
+            width: fit-content;  
+            height: auto; 
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgb(111, 173, 214);
+            border-radius: 10px;
+        }
+        .display{
+            font-size: 30px;
+            
+            padding-top: 10px;
+            padding-bottom: 0px;
+            padding-right: 20px;
+            margin-top:30px;
+            margin-right: 20px;
+            background-color: black;
+            color: black;
+            box-shadow: 2px 2px white ;
+            border-radius: 5px;
+            background-color: white;
+            border-width: 20px;
+            width: auto ;
+            text-align: right;
+            height: 70px;
+        }
 
+        .disp1{
+            opacity: .4;
+            font-size: 20px;
+            height: 20px;
+           
+        }
+
+        .disp2{
+           
+            padding-top: 15px;
+        }
+        
+        .allnumbers:hover{
+            background-color: white;
+            color: black;
+        }
+        .alloperators:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .button{
+            font-size: 30px;
+            padding: 5px 30px;
+            margin-top:30px;
+            margin-right: 20px;
+            text-align: center;
+            background-color: rgba(41, 117, 204, 0.932);
+            color: white;
+            box-shadow: 2px 2px white ;
+            border-radius: 5px;
+            display: inline;
+        }
+
+        .data{
+            margin-top: 30px;  
+            
+        }
+        
+        .inlin{
+            margin-top : 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+       
+        <div class="display">
+            <div class="disp1">0</div>
+            <div class="disp2">0</div>
+        </div>
+        
+        <br>
+        <div class="data">
+            <div class="inlin">
+                <div class="button allnumbers" type="button">1</div>
+                <div class="button allnumbers">2</div>
+                <div class="button allnumbers">3</div>
+                <div class="button alloperators">+</div>
+                <div class="button alloperators">-</div>
+                
+            </div> 
+            <br>
+            <div class="inlin">
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='4'>4</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='5'>5</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='6'>6</div>
+                <div class="button alloperators" type="button" onclick="assignedvalue(this)" data-op='*'>*</div>
+                <div class="button alloperators" type="button" onclick="assignedvalue(this)" data-op='/'>/</div>
+                
+            </div>
+            <br>
+            <div class="inlin">
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='8'>8</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='9'>9</div>
+                <div class="button result" type="button">Result</div>
+                
+            </div>
+            <br>
+            <div class="inlin">
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='.'>.</div>
+                <div class="button allnumbers" type="button" onclick="assignedvalue(this)" data-value='0'>0</div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
